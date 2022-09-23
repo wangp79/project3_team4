@@ -1,1 +1,0 @@
-web: gunicorn neo_chart.app:project3_team4
