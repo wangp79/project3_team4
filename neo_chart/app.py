@@ -62,7 +62,7 @@ class Neo(db.Model):
 db.create_all()
 
 
-con = sqlite3.connect("NEO.db")
+con = sqlite3.connect("../project3_team4/NEO.db")
 cursor = con.cursor()
 
 cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
@@ -72,7 +72,7 @@ print(cursor.fetchall())
 
 # converting sqlite to Dataframe *******************
 
-cnx = sqlite3.connect('NEO.db')
+cnx = sqlite3.connect('../project3_team4/NEO.db')
 records_df = pd.read_sql_query('select * from NEOs', cnx)
 scatterplot_data = pd.read_sql_query('select v_rel, h from NEOs', cnx)
 bubblechart_data = pd.read_sql_query('select dist_min, h from NEOs where dist_min <= .05 and h <= 22.0', cnx)
