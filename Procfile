@@ -1,0 +1,1 @@
+web: gunicorn neo_chart.app:app
