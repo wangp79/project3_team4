@@ -88,7 +88,7 @@ print(bubblechart_data)
 def home():
     return render_template('index.html')
 
-@app.route('/index.html')
+@app.route('/index')
 def index_page():
     return render_template('index.html')
 
@@ -99,7 +99,7 @@ def index_page():
 
 
 ## conn to scatterplot 
-@app.route('/scatterplot.html')
+@app.route('/scatterplot')
 def display_scatter():
     return render_template('scatterplot.html')
  
@@ -111,7 +111,7 @@ def display_api_scatter():
 
 
 ## conn to bubblechart 
-@app.route('/bubblechart.html')
+@app.route('/bubblechart')
 def display_bubble():
     return render_template('bubblechart.html')
  
