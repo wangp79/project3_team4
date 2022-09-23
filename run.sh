@@ -1,1 +1,0 @@
-FLASK_APP=neo_chart/app.py flask run
