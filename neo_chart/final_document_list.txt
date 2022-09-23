@@ -1,0 +1,35 @@
+**HTML** <template>
+index.html
+scatterplot.html
+bubblechart.html
+
+**JS** <static/js>
+plot_scatter.js
+plot_bubble.js
+
+**CSS** <static/css>
+stylesheet.css
+
+**Images** <static/images>
+space.png
+star.jpg
+space5.jpeg
+space4.jpeg
+scatterimg.png
+bubbleimg.png
+scatterimage.jpg
+bubblechart.jpgS
+
+**Flask and Database**
+app.py
+NEO.db
+project 3 v3.ipynb
+
+**Screenshots** <screenshots>
+WelcomePg
+thumbnails
+ScatterPg
+Scatter_chart
+BubblePg
+Bubble_chart
+

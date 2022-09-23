@@ -1,1 +1,1 @@
-web: gunicorn pet_pals.app:app
+web: gunicorn neo_chart.app:app

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Financial Plot</title>
+    <script src="https://unpkg.com/simple-statistics@5.0.0/dist/simple-statistics.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </head>
+
+  <body>
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <h1>This is a display result for JD filtered by body='MOON'</h1>
+    {% for x in values %}
+    <p>JD: {{x.dist_max}}, {{x.dist_min}}</p>
+    {% endfor %}
+  </body>
+</html>
