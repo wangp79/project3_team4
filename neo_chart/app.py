@@ -28,38 +28,38 @@ app= Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///' + os.path.join(basedir, 'NEO.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# db = SQLAlchemy(app)
+db = SQLAlchemy(app)
 
 
-# class Neo(db.Model): 
-#     __tablename__='Neos'  
-#     id = db.Column(db.Integer, primary_key=True)
-#     des = db.Column(db.String(225))
-#     orbit_id = db.Column(db.String)
-#     jd = db.Column(db.String(40))
-#     dist = db.Column(db.String())
-#     dist_min = db.Column(db.String())
-#     dist_max = db.Column(db.String())
-#     v_rel = db.Column(db.String())
-#     v_inf = db.Column(db.String())
-#     t_sigma_f = db.Column(db.String(40))
-#     body = db.Column(db.String(20))
-#     h = db.Column(db.String())
+class Neo(db.Model): 
+    __tablename__='Neos'  
+    id = db.Column(db.Integer, primary_key=True)
+    des = db.Column(db.String(225))
+    orbit_id = db.Column(db.String)
+    jd = db.Column(db.String(40))
+    dist = db.Column(db.String())
+    dist_min = db.Column(db.String())
+    dist_max = db.Column(db.String())
+    v_rel = db.Column(db.String())
+    v_inf = db.Column(db.String())
+    t_sigma_f = db.Column(db.String(40))
+    body = db.Column(db.String(20))
+    h = db.Column(db.String())
 
-#     def __init__(self, des, orbit_id, jd, dist, dist_min, dist_max, v_rel, v_inf,t_sigma_f, body, h):
-#         self.des = des
-#         self.orbit_id = orbit_id
-#         self.jd = jd
-#         self.dist = dist
-#         self.dist_min = dist_min
-#         self.dist_max = dist_max
-#         self.v_rel = v_rel
-#         self.v_int = v_inf
-#         self.t_sigma_f = t_sigma_f
-#         self.body = body
-#         self.h = h 
+    def __init__(self, des, orbit_id, jd, dist, dist_min, dist_max, v_rel, v_inf,t_sigma_f, body, h):
+        self.des = des
+        self.orbit_id = orbit_id
+        self.jd = jd
+        self.dist = dist
+        self.dist_min = dist_min
+        self.dist_max = dist_max
+        self.v_rel = v_rel
+        self.v_int = v_inf
+        self.t_sigma_f = t_sigma_f
+        self.body = body
+        self.h = h 
 
-# db.create_all()
+db.create_all()
 
 
 con = sqlite3.connect("NEO.db")
