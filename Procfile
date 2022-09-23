@@ -1,1 +1,1 @@
-web:gunicorn neo_chart.app:project3-team4
+web:gunicorn neo_chart.app:app
